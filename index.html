@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Wilde-French Wedding</title>
+    <script src="https://kit.fontawesome.com/259628c539.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div id="content">
+  <div id="header">
+    <div id="headerContent">
+  <div id="title"><h1>A Wilde-French Wedding</h1></div>
+  <div id="headingCopy"><h2>Thank you for RSVPing to our wedding!</h2>
+  <p>We're excited to see you there — complete the form below to let us know if you'll be able to join us.</p>
+  <p>The wedding will take place at <strong>Crookes Social Club</strong> in Sheffield on <strong>Sunday, May 24<sup>th</sup>, 2026.</strong></p>
+    </div>
+      <a href="#form"><button id="formButton">RSVP <i class="fa-sharp-duotone fa-solid fa-ring"></i></button></a>
+  </div>
+    </div>
+  <div class="section" id="qAndA">
+    <div id="qAndAContent">
+    <h2>About Our Wedding</h2>
+    <div id="questions">
+        <h3 class="questionHeader">How do I get there?</h3>
+        <div class="questionContent" id="q1Content">
+        <h4>Getting to Sheffield</h4>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fa-solid fa-plane"></i></span>The nearest airports with Transatlantic flights are London Heathrow, London Gatwick and Manchester.</li>
+          <li><span class="fa-li"><i class="fa-solid fa-train"></i></span>You can get to Sheffield directly from most major UK cities - we're two hours from London, five hours from Glasgow, and about an hour from Manchester and Birmingham.</li>
+        </ul>
+        <p>Once you arrive at the station, taxis and Uber will be available, or you can take the 52 or 52a bus from the bus station.</p>
+      </div>
+        <h3 class="questionHeader">What can I do when I'm there?</h3>
+        <div class="questionContent" id="q2Content">
+        <p>Sheffield is Britain's sixth biggest city, so there's plenty to do nearby! Within the city you can visit the Peace Gardens, Winter Gardens and Millennium Gallery in the City Centre, take a walk out to Forge Dam, or check out lots of eating and drinking options around Kelham Island and Hunters Bar.</p>
+        <p>If you want to head out of the city, it's right next to the beautiful Peak District National Park, as well as nearby to Chatsworth House and the village of Bakewell (home of tarts).</p>
+      </div>
+        <h3 class="questionHeader">Our wedding schedule</h3>
+        <div class="questionContent" id="q3Content">
+        <p>We've chosen to hold our wedding on May 24, 2026 as it's a long weekend in both the UK and Canada. We hope this lets as many people as possible come and join us!</p>
+        <p>As well as the wedding day, we are planning a few events in the preceding days:</p>
+        <ul class="fa-ul" id="schedule">
+          <li><span class="fa-li"><i class="fa-solid fa-champagne-glasses"></i></span><strong>Thursday, May 21</strong> - Drinks in London. <em>Location TBC.</em></li>
+          <li><span class="fa-li"><i class="fa-solid fa-person-walking"></i></span><strong>Saturday, May 23</strong> - Ramble on Kinder Scout in the Peak District. There will be two rambles available - an easy X mile walk and a more challenging X mile hike. <em>Both walks will start at Edale Train Station and end at the Rambler Inn.</em></li>
+          <li><span class="fa-li"><i class="fa-sharp-duotone fa-solid fa-ring"></i></span><strong>Sunday, May 24</strong> - Wedding day! <em>Starting at 2:30pm at Crookes Social Club, Sheffield.</em></li>
+        </ul>
+      </div>
+        <h3 class="questionHeader">What if I can't make it?</h3>
+        <div class="questionContent" id="q4Content">
+        <p>That's totally fine! It would be great if you could still fill in our form just to let us know, so we have an idea of numbers - or reach out to one of us directly.</p>
+        <p>If you're based in the Pacific Northwest and can't manage the travel or time off to come across the ocean, please let us know as we will be organizing a leaving event in Vancouver before we go back home for the wedding, and we'd love to see you there instead.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="section" id="form">
+    <div id="formContent">
+    <h2>Form</h2>
+    <form id="rsvpForm" method="POST" action="https://script.google.com/macros/s/AKfycbzsKiSDggvXTtcLL9mdemOZz0uZ-FyaubLW7Tq7jMVgxPAVX2AEMrJdev38mQBGycS3/exec">
+      <div class="rsvpQuestion">
+      <label for="name">Your Name</label><br>
+    <input type="text" id="name" name="name"><br><br>
+      </div>
+      <div class="rsvpQuestion">
+      <label for="confirmation">Will you be able to join us on May 24th, 2026?</label><br>
+    <select id="confirmation" name="confirmation">
+      <option value=""> </option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      </select></br>
+      </div>
+      <div class="rsvpQuestion">
+      <label for="origin">Where will you be coming from?</label><br>
+    <input type="text" id="origin" name="origin"><br><br>
+        </div>
+      <div class="rsvpQuestion">
+      <label for="dietary">Do you have any dietary requirements you would like us to take into account?</label><br>
+    <input type="text" id="dietary" name="dietary"><br><br>
+        </div>
+      <div class="rsvpQuestion">
+      <label for="access">Do you have any access needs you would like us to take into account?</label><br>
+    <input type="text" id="access" name="access"><br><br>
+        </div>
+      <div class="rsvpQuestion">
+      <label for="family">If any other members of your family will be joining, please list them here so we can add them to our list of attendees.</label><br>
+    <input type="text" id="family" name="family"><br><br>
+        </div>
+      <div class="rsvpQuestion">
+      <div class="custom-select">
+      <label for="kids">Will you need childcare for the day? We will make a decision on whether we can provide childcare based on demand.</label><br>
+    <select id="kids" name="kids">
+      <option value=""> </option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      </select>
+    </div>
+      <br><br>
+        </div>
+      <div class="rsvpQuestion">
+      <label for="volunteer">Do you have any skills or experience you would like to volunteer to help make this wedding extra special? E.g. photography, a DJ set, baking, playing music, making a speech, helping to decorate/set up on the day?
+
+  Please don’t feel you have to volunteer for anything! We just want to make sure anyone who does want to help out has an opportunity to do so.</label><br>
+      <textarea rows="12" cols="50" id="volunteer" name="volunteer"></textarea><br><br>
+      <input type="submit" id="submitButton" onClick="return false;">
+        </div>
+    </form>
+    <p id="formResponse">Thank you so much for RSVPing! We're so excited to see you there. If you have any questions before the wedding, please get in touch at <a href="mailto:info@wildefrenchwedding.com">info@wildefrenchwedding.com</a>.</p>
+  </div>
+  </div>
+  </div>
+  <footer><p>If you have any questions or this site isn't working for you, please contact us at <a href="mailto:info@wildefrenchwedding.com">info@wildefrenchwedding.com</a></p></footer>
+  </body>
+</html>
