@@ -20,12 +20,6 @@ const submitButton = document.getElementById("submitButton");
 const rsvpForm = document.getElementById("rsvpForm");
 const formResponse = document.getElementById("formResponse");
 
-submitButton.addEventListener("click", function() {
-    rsvpForm.style.display = "none";
-    formResponse.style.display = "block";
-  }
-)
-
 rsvpForm.addEventListener("submit", function(e) {
   e.preventDefault();
   const data = new FormData(form);
@@ -35,5 +29,11 @@ rsvpForm.addEventListener("submit", function(e) {
     body: data,
   })
 });
+
+submitButton.addEventListener("click", function() {
+    rsvpForm.style.display = "none";
+    formResponse.style.display = "block";
+  }
+)
 
 });
