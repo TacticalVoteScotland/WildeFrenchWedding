@@ -16,28 +16,28 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const confirmation = document.getElementById("confirmation");
-const submitButton = document.getElementById("submitButton");
-const rsvpForm = document.getElementById("rsvpForm");
-const formResponse = document.getElementById("formResponse");
+  const name = document.getElementById("name");
+  const confirmation = document.getElementById("confirmation");
+  const requiredMessage = document.getElementById("requiredMessage");
+  const submitButton = document.getElementById("submitButton");
+  const rsvpForm = document.getElementById("rsvpForm");
+  const formResponse = document.getElementById("formResponse");
 
-rsvpForm.addEventListener("submit", function(e) {
-  e.preventDefault();
-  const data = new FormData(rsvpForm);
-  const action = e.target.action;
-  fetch(action, {
-    method: 'POST',
-    body: data,
-  })
-});
-
-submitButton.addEventListener("click", function() {
-    rsvpForm.style.display = "none";
-    formResponse.style.display = "block";
-  }
-)
-
-let logicList = document.getElementsByClassName("logicGate");
-let j;
+  rsvpForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    if (name.value != "" && confirmation.value != "") {
+      const data = new FormData(rsvpForm);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      requiredMessage.style.display = "none";
+      rsvpForm.style.display = "none";
+      formResponse.style.display = "block";
+    } else {
+      requiredMessage.style.display = "block";
+    }
+  });
 
 });

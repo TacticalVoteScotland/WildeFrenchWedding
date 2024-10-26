@@ -248,3 +248,7 @@ button:hover, #submitButton:hover {
   color: var(--white);
   font-weight: 700;
 }
+
+#requiredMessage {
+  display: none;
+}

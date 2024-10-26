@@ -64,7 +64,7 @@
     <input type="text" id="name" name="Name" required><br><br>
       <label for="Attending">Will you be able to join us on May 24th, 2026?*</label><br>
     <select id="confirmation" name="Attending" required>
-      <option value="blank"> </option>
+      <option value=""> </option>
       <option value="Yes">Yes</option>
       <option value="No">No</option>
       </select><br />
@@ -87,6 +87,7 @@
 
   Please don’t feel you have to volunteer for anything! We just want to make sure anyone who does want to help out has an opportunity to do so.</label><br>
       <textarea class="logicGate" rows="12" cols="50" id="volunteer" name="Volunteer"></textarea><br><br>
+      <p id="requiredMessage">Please complete any required fields before submitting.</p>
       <input type="submit" id="submitButton">
     </form>
     <p id="formResponse">Thank you so much for RSVPing! We're so excited to see you there. If you have any questions before the wedding, please get in touch at <a href="mailto:info@wildefrenchwedding.com">info@wildefrenchwedding.com</a>.</p>
