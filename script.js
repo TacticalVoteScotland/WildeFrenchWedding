@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 let acc = document.getElementsByClassName("questionHeader");
 let i;
 
@@ -24,3 +25,4 @@ submitButton.addEventListener("click", function() {
     formResponse.style.display = "block";
   }
 )
+});
