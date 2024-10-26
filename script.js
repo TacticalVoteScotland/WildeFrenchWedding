@@ -45,11 +45,11 @@ confirmation.addEventListener("change", function() {
       for (j = 0; j < logicList.length; j++) {
         logicList[j].style.display = "block";
         };
-      }
-    } else {
+      } else {
       for (j = 0; j < logicList.length; j++) {
         logicList[j].style.display = "none";
         };
-      })
+      }
+    })
 
 });
