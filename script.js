@@ -22,10 +22,14 @@ for (i = 0; i < acc.length; i++) {
   const submitButton = document.getElementById("submitButton");
   const rsvpForm = document.getElementById("rsvpForm");
   const formResponse = document.getElementById("formResponse");
+  const thankYou = document.getElementById("thankYou");
 
   rsvpForm.addEventListener("submit", function(e) {
     e.preventDefault();
     if (name.value != "" && confirmation.value != "") {
+      if (confirmation.value == "No") {
+        thankYou.innerHTML = "We're sorry to hear you can't make it, but we'd love to see you before our wedding! Feel free to get in touch and let us know when you're next free!";
+      }
       const data = new FormData(rsvpForm);
       const action = e.target.action;
       fetch(action, {
@@ -35,6 +39,7 @@ for (i = 0; i < acc.length; i++) {
       requiredMessage.style.display = "none";
       rsvpForm.style.display = "none";
       formResponse.style.display = "block";
+
     } else {
       requiredMessage.style.display = "block";
     }
