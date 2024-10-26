@@ -22,7 +22,7 @@ const formResponse = document.getElementById("formResponse");
 
 rsvpForm.addEventListener("submit", function(e) {
   e.preventDefault();
-  const data = new FormData(form);
+  const data = new FormData(rsvpForm);
   const action = e.target.action;
   fetch(action, {
     method: 'POST',
