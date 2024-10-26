@@ -26,8 +26,7 @@ submitButton.addEventListener("click", function() {
   }
 )
 
-const form = document.getElementById('my-form');
-form.addEventListener("submit", function(e) {
+rsvpForm.addEventListener("submit", function(e) {
   e.preventDefault();
   const data = new FormData(form);
   const action = e.target.action;
