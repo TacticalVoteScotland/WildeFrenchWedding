@@ -44,8 +44,10 @@ confirmation.addEventListener("change", function() {
   for (j = 0; j < logicList.length; j++) {
     if (confirmation.value == "Yes") {
       logicList[j].style.display = "block";
+      logicList[j].style.maxHeight = "null";
     } else {
       logicList[j].style.display = "none";
+      logicList[j].style.maxHeight = "0";
     }
   }
 })
