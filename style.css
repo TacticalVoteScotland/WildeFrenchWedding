@@ -83,6 +83,11 @@ input, select, textarea {
   -webkit-box-sizing: border-box;
 }
 
+input::placeholder, textarea::placeholder {
+  opacity: 0.5;
+  color: var(--white);
+}
+
 label {
   font-weight: 700;
   color: var(--white);
