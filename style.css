@@ -22,7 +22,6 @@ body {
 }
 
 #header {
-  width: 100vw;
   height: 100vh;
   background: var(--bright);
   display: flex;
@@ -134,7 +133,6 @@ select:focus {
 }
 
 #qAndA {
-  width: 100vw;
   background-color: var(--blue);
   padding: 20px;
 }
@@ -225,7 +223,6 @@ button:hover, #submitButton:hover {
 }
 
 #form {
-  width: 100vw;
   background: var(--bright);
   padding: 20px;
 }
