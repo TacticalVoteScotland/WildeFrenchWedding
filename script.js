@@ -40,14 +40,4 @@ submitButton.addEventListener("click", function() {
 let logicList = document.getElementsByClassName("logicGate");
 let j;
 
-confirmation.addEventListener("change", function() {
-  for (j = 0; j < logicList.length; j++) {
-    if (confirmation.value == "Yes") {
-      logicList[j].style.display = "block";
-    } else {
-      logicList[j].style.display = "none";
-    }
-  }
-})
-
 });

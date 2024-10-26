@@ -235,10 +235,6 @@ button:hover, #submitButton:hover {
   margin: auto;
 }
 
-.logicGate {
-  display: none;
-}
-
 #rsvpForm {
   max-width: 600px;
 }
