@@ -61,21 +61,21 @@
     <h2>RSVP to let us know if you'll be attending our wedding!</h2>
     <form id="rsvpForm" method="POST" action="https://script.google.com/macros/s/AKfycbzsKiSDggvXTtcLL9mdemOZz0uZ-FyaubLW7Tq7jMVgxPAVX2AEMrJdev38mQBGycS3/exec">
       <label for="Name">Your Name*</label><br>
-    <input type="text" id="name" name="Name" required><br><br>
+    <input type="text" id="name" name="Name" required placeholder="Your Name"><br><br>
       <label for="Attending">Will you be able to join us on May 24th, 2026?*</label><br>
     <select id="confirmation" name="Attending" required>
       <option value=""> </option>
       <option value="Yes">Yes</option>
       <option value="No">No</option>
       </select><br />
-      <label class="logicGate" for="Origin">Where will you be coming from?</label><br>
+      <label class="logicGate" for="Origin" placeholder="Your Home">Where will you be coming from?</label><br>
     <input class="logicGate" type="text" id="origin" name="Origin"><br><br>
       <label class="logicGate" for="Dietary">Do you have any dietary requirements you would like us to take into account?</label><br>
-    <input class="logicGate" type="text" id="dietary" name="Dietary"><br><br>
+    <input class="logicGate" type="text" id="dietary" name="Dietary" placeholder="Your Dietary Requirements"><br><br>
       <label class="logicGate" for="Access">Do you have any access needs you would like us to take into account?</label><br>
-    <input class="logicGate" type="text" id="access" name="Access"><br><br>
+    <input class="logicGate" type="text" id="access" name="Access" placeholder="Your Access Needs"><br><br>
       <label class="logicGate" for="Family">If any other members of your family will be joining, please list them here so we can add them to our list of attendees.</label><br>
-    <input class="logicGate" type="text" id="family" name="Family"><br><br>
+    <input class="logicGate" type="text" id="family" name="Family" placeholder="Your Family Information"><br><br>
       <label class="logicGate" for="Childcare">Will you need childcare for the day? We will make a decision on whether we can provide childcare based on demand.</label><br>
     <select class="logicGate" id="kids" name="Childcare">
       <option value=""> </option>
@@ -86,7 +86,7 @@
       <label class="logicGate" for="Volunteer">Do you have any skills or experience you would like to volunteer to help make this wedding extra special? E.g. photography, a DJ set, baking, playing music, making a speech, helping to decorate/set up on the day?
 
   Please don’t feel you have to volunteer for anything! We just want to make sure anyone who does want to help out has an opportunity to do so.</label><br>
-      <textarea class="logicGate" rows="12" cols="50" id="volunteer" name="Volunteer"></textarea><br><br>
+      <textarea class="logicGate" rows="12" cols="50" id="volunteer" name="Volunteer" placeholder="Please Enter Here"></textarea><br><br>
       <p id="requiredMessage">Please complete any required fields before submitting.</p>
       <input type="submit" id="submitButton">
     </form>
