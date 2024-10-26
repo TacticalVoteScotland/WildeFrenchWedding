@@ -235,7 +235,7 @@ button:hover, #submitButton:hover {
   margin: auto;
 }
 
-#origin, #dietary, #access, #family, #kids, #volunteer {
+.logicGate {
   display: none;
 }
 

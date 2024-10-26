@@ -37,23 +37,19 @@ submitButton.addEventListener("click", function() {
   }
 )
 
+let logicList = document.getElementsByClassName("logicGate");
+let j;
+
 confirmation.addEventListener("change", function() {
     if (confirmation.value == "Yes") {
-      document.querySelector('#origin').style.display = "block";
-      document.querySelector('#dietary').style.display = "block";
-      document.querySelector('#access').style.display = "block";
-      document.querySelector('#family').style.display = "block";
-      document.querySelector('#kids').style.display = "block";
-      document.querySelector('#volunteer').style.display = "block";
+      for (j = 0; j < logicList.length; j++) {
+        logicList[j].style.display = "block";
+        };
+      }
     } else {
-      document.querySelector('#origin').style.display = "none";
-      document.querySelector('#dietary').style.display = "none";
-      document.querySelector('#access').style.display = "none";
-      document.querySelector('#family').style.display = "none";
-      document.querySelector('#kids').style.display = "none";
-      document.querySelector('#volunteer').style.display = "none";
-    }
-  }
-)
+      for (j = 0; j < logicList.length; j++) {
+        logicList[j].style.display = "none";
+        };
+      })
 
 });
