@@ -41,15 +41,13 @@ let logicList = document.getElementsByClassName("logicGate");
 let j;
 
 confirmation.addEventListener("change", function() {
+  for (j = 0; j < logicList.length; j++;) {
     if (confirmation.value == "Yes") {
-      for (j = 0; j < logicList.length; j++) {
-        logicList[j].style.display = "block";
-        };
-      } else {
-      for (j = 0; j < logicList.length; j++) {
-        logicList[j].style.display = "none";
-        };
-      }
-    })
+      logicList[j].style.display = "block";
+    } else {
+      logicList[j].style.display = "none";
+    }
+  }
+})
 
 });
