@@ -9,6 +9,21 @@
     --ashGrey: #ABC8C0;
 }
 
+@media screen and (min-width:800px) {
+  #headerContent {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  #rsvpForm {
+      max-width: 600px;
+  }
+
+  #formQuestions {
+      max-width: 600px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,8 +32,8 @@ body {
   font-family: inter;
   color: var(--copy);
   background: var(--pale);
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 #header {
@@ -30,7 +45,6 @@ body {
 }
 
 #headerContent {
-  max-width: 600px;
   padding: 20px;
 }
 
@@ -182,7 +196,6 @@ button:hover, #submitButton:hover {
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
-  max-width: 600px;
 }
 
 .questionHeader {
@@ -219,7 +232,6 @@ button:hover, #submitButton:hover {
   background-color: var(--white);
   border-radius: 0 0 5px 5px;
   width: 100%;
-  max-width: 600px;
 }
 
 #form {
@@ -233,12 +245,7 @@ button:hover, #submitButton:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
   margin: auto;
-}
-
-#rsvpForm {
-  max-width: 600px;
 }
 
 #formResponse {
