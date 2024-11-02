@@ -40,6 +40,7 @@ body {
   height: 100vh;
   background-image: url("/images/image1.jpg"), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
   background-blend-mode: overlay;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
