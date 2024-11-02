@@ -29,7 +29,7 @@ for (i = 0; i < acc.length; i++) {
 
   function switchImages() {
     let randomImage = Math.floor(Math.random() * images.length);
-    header.style.backgroundImage = `url(${randomImage})`
+    header.style.backgroundImage = `url(${images[randomImage]})`
   }
 
   window.setInterval(switchImages, 5000);
