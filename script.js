@@ -25,11 +25,15 @@ for (i = 0; i < acc.length; i++) {
   const thankYou = document.getElementById("thankYou");
   const header = document.getElementById("header");
 
-  let images = ["/images/image1.jpg", "/images/image2.jpg", "/images/image3.jpg", "/images/image4.jpg", "/images/image4.jpg"]
+  let randomImage = Math.floor(Math.random() * 41);
 
   function switchImages() {
-    let randomImage = Math.floor(Math.random() * images.length);
-    header.style.backgroundImage = `url(${images[randomImage]}), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))`
+    if (randomImage < 41) {
+      randomImage ++;
+    } else {
+      randomImage = 0;
+    }
+    header.style.backgroundImage = `url("/images/image${randomImage}.jpg"), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))`
   }
 
   window.setInterval(switchImages, 5000);
