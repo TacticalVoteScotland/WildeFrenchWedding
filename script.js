@@ -29,7 +29,7 @@ for (i = 0; i < acc.length; i++) {
 
   function switchImages() {
     let randomImage = Math.floor(Math.random() * images.length);
-    header.style.backgroundImage = `url(${images[randomImage]})`
+    header.style.backgroundImage = `url(${images[randomImage]}), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))`
   }
 
   window.setInterval(switchImages, 5000);
