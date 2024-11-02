@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
 let acc = document.getElementsByClassName("questionHeader");
 let i;
 
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+
+for (m = 0; m < 41; m++) {
+  preloadImage(m);
+}
+
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
