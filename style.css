@@ -126,7 +126,6 @@ select:focus {
 
 #volunteer {
   resize: none;
-  font-family: inter;
 }
 
 #title h1 {
@@ -134,6 +133,8 @@ select:focus {
   color: var(--white);
   font-weight: 900;
   line-height: 1;
+  font-family: "rockwell", sans-serif;
+  font-style: normal;
 }
 
 #headingCopy {
@@ -166,6 +167,8 @@ select:focus {
   font-weight: 900;
   font-size: 2em;
   color: white;
+  font-family: "rockwell", sans-serif;
+  font-style: normal;
 }
 
 button, #submitButton {
