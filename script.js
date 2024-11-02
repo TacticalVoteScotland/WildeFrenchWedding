@@ -5,10 +5,10 @@ let i;
 function preloadImage(url)
 {
     var img=new Image();
-    img.src=url;
+    img.src=`/images/image${url}.jpg`;
 }
 
-for (m = 0; m < 41; m++) {
+for (m = 1; m < 41; m++) {
   preloadImage(m);
 }
 
@@ -41,7 +41,7 @@ for (i = 0; i < acc.length; i++) {
     if (randomImage < 41) {
       randomImage ++;
     } else {
-      randomImage = 0;
+      randomImage = 1;
     }
     header.style.backgroundImage = `url("/images/image${randomImage}.jpg"), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))`
   }
