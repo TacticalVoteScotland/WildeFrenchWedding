@@ -23,6 +23,16 @@ for (i = 0; i < acc.length; i++) {
   const rsvpForm = document.getElementById("rsvpForm");
   const formResponse = document.getElementById("formResponse");
   const thankYou = document.getElementById("thankYou");
+  const header = document.getElementById("header");
+
+  let images = ["/images/image1.jpg", "/images/image2.jpg", "/images/image3.jpg", "/images/image4.jpg", "/images/image4.jpg"]
+
+  function switchImages() {
+    let randomImage = Math.floor(Math.random() * images.length);
+    header.style.backgroundImage = `url(${randomImage})`
+  }
+
+  window.setInterval(switchImages, 5000);
 
   rsvpForm.addEventListener("submit", function(e) {
     e.preventDefault();
