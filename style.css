@@ -41,7 +41,6 @@ body {
   background-image: url("/images/image1.jpg"), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
   background-blend-mode: overlay;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
